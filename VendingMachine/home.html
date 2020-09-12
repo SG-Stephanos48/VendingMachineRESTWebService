@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending Machine</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css"
+              rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Vending Machine</h1>
+            <hr/>
+
+            <div class="col-md-9">
+                <div> <!--id="allItems"-->
+                    
+                    <!--<input type="hidden" class="itemId" name="item_id" value="{{ allItems.id }}">-->
+                    <div class="row">
+                       <div id="div1" style="border: 1px solid" class="col-md-4">
+
+                       </div> 
+                       <div id="div2" style="border: 1px solid" class="col-md-4">
+
+                        </div> 
+                        <div id="div3" style="border: 1px solid" class="col-md-4">
+
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div id="div4" style="border: 1px solid" class="col-md-4">
+
+                        </div>    
+                        <div id="div5" style="border: 1px solid" class="col-md-4">
+
+                         </div> 
+                         <div id="div6" style="border: 1px solid" class="col-md-4">
+
+                         </div> 
+                     </div>
+                     <div class="row">
+                        <div id="div7" style="border: 1px solid" class="col-md-4">
+
+                        </div> 
+                        <div id="div8" style="border: 1px solid" class="col-md-4">
+
+                         </div> 
+                         <div id="div9" style="border: 1px solid" class="col-md-4">
+
+                         </div> 
+                     </div>
+                </div>
+            </div> <!-- End col div -->
+            <!--
+            #4: Add col to hold the new contact form - have it take up the other half of the row
+            -->
+            <div class="col-md-3">
+                <form>
+                    <h2 class="text-center">Total $ In</h2>
+
+                    <div class="col-md-12 offset-md-3">
+                        <input type="text" readonly="readonly" class="form-control" id="show-money" placeholder=""/>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" id="add-dollar" class="btn btn-default">Add Dollar</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" id="add-quarter" class="btn btn-default">Add Quarter</button>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" id="add-dime" class="btn btn-default">Add Dime</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" id="add-nickel" class="btn btn-default">Add Nickel</button>
+                        </div>
+                    </div>
+                </form>
+
+                <hr/>
+  
+                <form class="form-horizontal" role="form" id="add-coin">
+                    <h2 class="text-center">Messages</h2>  
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" readonly="readonly" class="form-control" id="show-message" placeholder=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="item-display">Item:</label>
+                            <input type="text" readonly="readonly" class="form-control" name="item-display" id="item-display" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" id="make-purchase" class="btn btn-default">Make Purchase</button>
+                        </div>
+                    </div>
+                </form>
+
+                <hr/>
+
+                <form class="form-horizontal" role="form" id="return-change">
+                    <h2 class="text-center">Change</h2>    
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text" readonly="readonly" class="form-control" id="show-change" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <button type="button" id="change-return" class="btn btn-default">Change Return</button>
+                    </div>
+                </form>
+            </div> <!-- End col div -->
+
+        </div>
+        <!-- #5: Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>
